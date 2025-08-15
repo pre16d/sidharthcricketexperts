@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐒𝐢𝐝𝐡𝐚𝐧𝐭𝐡 𝐂𝐫𝐢𝐜𝐤𝐞𝐭 𝐄𝐱𝐩𝐞𝐫𝐭</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./logo.jpg">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .animated-name {
+      animation: fadeIn 2s ease, pulse 3s infinite;
+    }
+
+    .animated-button {
+      background-image: linear-gradient(to right, #ff512f, #dd2476);
+      animation: fadeIn 2s ease;
+      transition: transform 0.3s;
+    }
+
+    .animated-button:hover {
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 8px 15px rgba(255, 81, 47, 0.5);
+    }
+  </style>
+</head>
+
+<body onclick="gotolink()" class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white min-h-screen flex flex-col items-center justify-center">
+  <!-- Hero Section -->
+  <div class="text-center space-y-6 px-4 max-w-screen-md">
+    <div class="relative inline-block">
+      <img src="logo.jpg" alt="Profile Logo" class="w-40 h-40 rounded-full shadow-lg transform transition hover:scale-110 hover:rotate-3">
+    </div>
+    <h1 class="text-4xl md:text-5xl font-extrabold uppercase animated-name text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
+        𝐒𝐢𝐝𝐡𝐚𝐧𝐭𝐡 𝐂𝐫𝐢𝐜𝐤𝐞𝐭 𝐄𝐱𝐩𝐞𝐫𝐭
+    </h1>
+    <p class="text-lg md:text-xl font-medium text-yellow-300">😍 Khelo Cricket Hamare Sath 😍</p>
+    
+    <!-- Countdown Loader -->
+    <div class="relative w-28 h-28 mx-auto">
+      <div class="absolute inset-0 rounded-full border-t-4 border-yellow-400 border-opacity-50 animate-spin"></div>
+      <div id="countdown" class="absolute inset-0 flex items-center justify-center text-3xl font-bold text-yellow-400">
+        30
+      </div>
+    </div>
+
+    <!-- Join Button -->
+     <div class="grid place-items-center">
+    <div class="mt-6">
+      <a href="https://t.me/+Hamgh2PMVnNhNWE1" target="_blank">
+        <button class="animated-button text-lg font-semibold text-white py-3 px-8 rounded-lg flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+          </svg>
+          JOIN FREE CHANNEL NOW
+        </button>
+      </a>
+    </div>
+</div>
+
+    <!-- Stats Section -->
+    <div class="mt-4 space-y-2 text-center">
+      <ul class="text-lg space-y-1">
+        <li>BBL 44/43 Pass</li>
+        <li>2023 IPL 74/73 Pass</li>
+        <li>T20 World Cup 55/53 Match Pass</li>
+      </ul>
+      <p class="mt-4 text-sm uppercase font-medium">
+        <span class="text-4xl font-bold text-red-500 mr-2">99%</span> <span>Accuracy</span>
+        <br>
+        <span class="text-lg font-semibold text-white">Cricket trading ki duniya ka badshah 👑 💰</span>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    let timeLeft = 30; // Start at 30 seconds
+    const countdownElement = document.getElementById("countdown");
+
+    setInterval(() => {
+      if (timeLeft > 0) {
+        timeLeft--;
+        countdownElement.textContent = timeLeft;
+      } else {
+        timeLeft = 30;
+      }
+    }, 1000);
+
+    
+    function gotolink(){
+        window.open('https://t.me/+Hamgh2PMVnNhNWE1');
+    }
+  </script>
+  
+<script>
+    document.addEventListener('contextmenu', function (e) {
+    e.preventDefault(); // Prevent the default right-click menu
+    // alert('Right-click is disabled on this webpage.');
+});
+
+document.addEventListener("keydown", function(event) {
+        // Check if Ctrl key is pressed along with 'U'
+        if (event.ctrlKey && event.key === "u") {
+            event.preventDefault(); // Prevent the default action
+            // alert("View source is disabled!"); // Optional alert message
+        }
+    });
+
+</script>
+</body>
+
+</html>
